@@ -1,0 +1,5 @@
+@import '../css-utils/variables.css';
+
+.title {
+  composes: msFontSize10 from 'responsive-modular-scale.css/modularscale.module.css';
+}
