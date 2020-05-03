@@ -5,8 +5,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Nav from "../components/nav"
 import Footer from "../components/footer"
 import Container from "../components/container"
-import "./layout.css"
-import typeStyle from "../components/type.module.css"
+
+import Learn from "./learnSection"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,8 +24,8 @@ const Layout = ({ children }) => {
       <Nav />
       <Container>
         <main>{children}</main>
-        <h1 className={typeStyle.title}>Header</h1>
       </Container>
+      <Learn />
       <Footer / >
     </>
   )

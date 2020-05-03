@@ -1,0 +1,64 @@
+@import './variables.css';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--charcoal);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.sectionTitle {
+  composes: msFontSize7 from 'responsive-modular-scale.css/modularscale.module.css';
+  background: -webkit-linear-gradient(left, var(--ponkan), var(--cerise));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* h2 {
+  composes: msFontSize7 from 'responsive-modular-scale.css/modularscale.module.css';
+}
+
+h3 {
+  composes: msFontSize5 from 'responsive-modular-scale.css/modularscale.module.css';
+}
+
+h4 {
+  composes: msFontSize3 from 'responsive-modular-scale.css/modularscale.module.css';
+}
+
+h5 {
+  composes: msFontSize0 from 'responsive-modular-scale.css/modularscale.module.css';
+}
+
+h6 {
+  composes: msFontSizeMinus1 from 'responsive-modular-scale.css/modularscale.module.css';
+} */
+
+p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: var(--ink);
+  @include font-size(1);
+}
+
+a {
+  color: var(--charcoal);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--cherry);
+  }
+}

@@ -1,5 +1,3 @@
-const DEBUG = process.env.NODE_ENV !== 'production'
-
 module.exports = ctx => {
   return {
     plugins: [
@@ -7,8 +5,9 @@ module.exports = ctx => {
       require('postcss-discard-comments')(),
       require('postcss-apply')(),
       require('postcss-preset-env')({
-        importFrom: [require.resolve('./src/css-utils/variables.css')]
-      }),
+        importFrom: [require.resolve('./src/css-utils/variables.css')],
+        stage: 1
+      })
     ]
   }
 }

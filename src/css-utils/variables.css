@@ -11,3 +11,11 @@
 
 @custom-media --ms-viewport-md (width > 480px);
 @custom-media --ms-viewport-lg (width > 768px);
+
+/* Colors -------------------------*/
+:root {
+  --charcoal:       #2E2E2E;
+
+  --ponkan:         #F5A124;
+  --cerise:         #D82B63;
+}
